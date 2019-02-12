@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+    <style>
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: #3F51B5;
+        }
+
+        .fa-user {
+            font-size: 72px;
+        }
+
+        .box {
+            width: 300px;
+            padding: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #2d3436;
+            text-align: center;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-family: 'Space Mono', monospace;
+        }
+
+        .box input {
+            font-family: 'Space Mono', monospace;
+        }
+
+        .box input[type= "text"],.box input[type = "password"]{
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            border: 2px solid #0984e3;
+            padding: 10px 10px;
+            width: 200px;
+            outline: none;
+            color: white;
+            border-radius: 25px;
+            transition: 0.35s;
+        }
+
+        .box input[type = "text"]:focus,.box input[type = "password"]:focus{
+            width: 250px;
+            border-color: #FF5910;
+        }
+
+        .box input[type = "button"] {
+            border: 0;
+            background: none;
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid #FF5910;
+            padding: 12px 10px;
+            width: 125px;
+            outline: none;
+            color: white;
+            font-size: 14px;
+            border-radius: 25px;
+            transition: 0.25s;
+        }
+
+        .box input[type = "button"]:hover, .box input[type = "button"]:focus {
+            background: #FF5910;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<form class="box" method="post">
+
+    <p style="font-size: 3vh">POS System</p>
+
+    <i class="far fa-user"></i>
+    <input type="text" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <!--<a href="dashboard.html">-->
+    <a href="dashboard.html"><input type="button"  value="Login"></a>
+
+</form>
+</body>
+</html>

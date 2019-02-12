@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<style>
+
+    html {
+        box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+
+    body {
+        background: lightblue;
+        margin: 30px;
+    }
+
+    form {
+        background: white;
+        padding: 15px;
+        margin: 0;
+    }
+
+    label {
+        display: block;
+        font-size: .8em;
+        margin: 0 0 6px 0;
+        color: gray;
+    }
+
+    textarea,
+    input {
+        background: wheat;
+        color:black;
+        border: 1px solid white;
+        padding: .3em 6px;
+        width: 100%;
+    }
+
+    :focus {
+        outline: none;
+            border-color: black;
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, .2);
+    }
+
+
+    .button {
+        background: lightgreen;
+        color: black;
+        border: 1px solid darkblue;
+        border: 0;
+        padding: .3em 24px;
+    }
+
+</style>
+
+<body>
+
+<form action="" method="POST">
+    <p>
+        <label for="First Name">Item Name:</label>
+        <input type="text" name="name" id="First Name" value="">
+    </p>
+    <p>
+        <label for="Last Name"> Item ID:</label>
+        <input type="text" name=" name" id="Last Name" value="">
+    </p>
+
+    <p>
+        <label for="Email">Company:</label>
+        <input type="email" name="mail" id="Email" autocomplete="">
+    </p>
+
+    <p>
+        <label for="Contact">date:</label>
+        <input type="tel" name="phone" id="Contact" placeholder="">
+    </p>
+
+    <p>
+        <label for="Contact">Price:</label>
+        <input type="tel" name="phone" id="price" placeholder="">
+    </p>
+
+
+    <p>
+        <label for="qty">Qty</label>
+        <textarea name="qty" id="qty"></textarea>
+    </p>
+
+    <p>
+        <label for="Contact">Description:</label>
+        <input type="tel" name="phone" id="description" placeholder="">
+    </p>
+
+    <p>
+        <button type="button" class="button">
+            Add
+        </button>
+    </p>
+    <p>
+        <button type="submit" class="button">
+            Delete
+        </button>
+    </p>
+    <p>
+        <button type="submit" class="button">
+            Update
+        </button>
+    </p>
+    <p>
+        <button type="submit" class="button">
+            <a href="dashboard.html">  Back</a>
+        </button>
+    </p>
+
+
+
+</form>
+</body>
+</html>
